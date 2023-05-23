@@ -82,7 +82,7 @@ python main.py \
     --gpu_id 0
 ```
 
-Considering that the teacher model may be unreliable on some points, the proposed **AdaIAD** by naturally combining **AdaAD** with [IAD](https://arxiv.org/abs/2106.04928) is to make the distillation process more reliable. Train a ResNet-18 model on CIFAR10 via the proposed AdaIAD in the paper, run the command:
+Considering that the teacher model may be unreliable on some points, the proposed **AdaIAD** by naturally combining **AdaAD** with [IAD](https://arxiv.org/abs/2106.04928) is to make the distillation process more reliable. Train a ResNet-18 model on CIFAR10 via the proposed **AdaIAD** in the paper, run the command:
 ```.bash
 python main.py \
     --dataset CIFAR10 \
