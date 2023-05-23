@@ -48,7 +48,7 @@ python main.py \
     --gpu_id 0
 ```
 
-Train a ResNet-18 model on CIFAR10 via the proposed AdaAD in the paper by using the teacher model [WideResNet-34-20](https://arxiv.org/abs/2111.02331), run the command:
+Train a ResNet-18 model on CIFAR10 via the proposed **AdaAD** in the paper by using the teacher model [WideResNet-34-20](https://arxiv.org/abs/2111.02331), run the command:
 ```.bash
 python main.py \
     --dataset CIFAR10 \
@@ -65,7 +65,7 @@ python main.py \
     --gpu_id 0
 ```
 
-The proposed AdaAD allows a larger search radius in the inner optimization to achieve better robustness performance, as reported in Section 3.4 and 4.2. Train a ResNet-18 model with a larger search radius via the proposed AdaAD, run the command:
+The proposed **AdaAD** allows a larger search radius in the inner optimization to achieve better robustness performance, as reported in Section 3.4 and 4.2. Train a ResNet-18 model on CIFAR10 with a larger search radius via the proposed **AdaAD**, run the command:
 ```.bash
 python main.py \
     --dataset CIFAR10 \
@@ -82,7 +82,7 @@ python main.py \
     --gpu_id 0
 ```
 
-Considering that the teacher model may be unreliable on some points, the proposed AdaIAD by naturally combining AdaAD with [IAD](https://arxiv.org/abs/2106.04928) is to make the distillation process more reliable. Train a ResNet-18 model on CIFAR10 via the proposed AdaIAD in the paper, run the command:
+Considering that the teacher model may be unreliable on some points, the proposed **AdaIAD** by naturally combining **AdaAD** with [IAD](https://arxiv.org/abs/2106.04928) is to make the distillation process more reliable. Train a ResNet-18 model on CIFAR10 via the proposed AdaIAD in the paper, run the command:
 ```.bash
 python main.py \
     --dataset CIFAR10 \
@@ -97,4 +97,17 @@ python main.py \
     --lr_max 0.1 \
     --lr_schedule piecewise \
     --gpu_id 0
+```
+
+## References
+If you find the codes useful for your research, please consider citing
+```bib
+@InProceedings{Huang_2023_CVPR,
+    author    = {Huang, Bo and Chen, Mingyang and Wang, Yi and Lu, Junda and Cheng, Minhao and Wang, Wei},
+    title     = {Boosting Accuracy and Robustness of Student Models via Adaptive Adversarial Distillation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {24668-24677}
+}
 ```
