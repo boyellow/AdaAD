@@ -17,7 +17,7 @@ The codes are evaluated under the following environment settings and libraries:
 - advertorch
 
 ## Acknowledgement
-The teacher model [WideResNet-34-20](https://arxiv.org/abs/2111.02331) and [WideResNet-34-10](https://arxiv.org/abs/2111.02331) are used on CIFAR10 and CIFAR100, respectively, in our experiments.
+The teacher model [WideResNet-34-20](https://arxiv.org/abs/2111.02331) and [WideResNet-34-10](https://arxiv.org/abs/2111.02331) are used on CIFAR10 and CIFAR100, respectively, in our experiments. They are collected and reported in [RobustBench](https://robustbench.github.io/). For example, it can be downloaded by the shared google-drive link [WideResNet-34-20](https://drive.google.com/uc?export=download&id=1-5JmY9rapuGwCUc2nPvy7Rb_sn_dHhFm). 
 
 ## Requirements
 - Install or download [AutoAttack](https://github.com/fra31/auto-attack):
